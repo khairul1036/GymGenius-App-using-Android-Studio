@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "51429392667",
+    "project_id": "gymgenius-6b18c",
+    "storage_bucket": "gymgenius-6b18c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:51429392667:android:94a6dc3773b03a5470d3be",
+        "android_client_info": {
+          "package_name": "com.example.gymgenius"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDmdYg0IoDuQ9ZNSetOhjVlvYFjAxIG0w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

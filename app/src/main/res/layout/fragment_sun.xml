@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sun"
+    android:background="@drawable/diet">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E60E0E0E">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Breakfast (414 calories)"
+                    android:textSize="22dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_marginTop="15dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• Avocado-Egg Toast\n• 1 slice whole-grain bread\n• 1/2 medium avocado\n• 1 large egg, cooked in 1/4 tsp. olive oil or coat pan with a thin layer of cooking spray (1-second spray)\n• Season egg with a pinch of salt and pepper.\n• 1 medium banana"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:textStyle=""
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_marginTop="15dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Morning Snack (305 calories)"
+                    android:textSize="22dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_marginTop="15dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• 1 medium apple\n• 2 Tbsp. peanut butter"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:textStyle=""
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_marginTop="15dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lunch (468 calories)"
+                    android:textSize="22dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_marginTop="15dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• 2 cups Ravioli and Vegetable Soup\n• 2 diagonal slices baguette (1/4 inch thick), preferably whole-wheat\n• 3 Tbsp. shredded Cheddar cheese Top baguette slices with 1 1/2 Tbsp. cheese each and a pinch of pepper. Toast until cheese is melted.\n• 1 medium orange"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:textStyle=""
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_marginTop="15dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Afternoon Snack (220 calories)"
+                    android:textSize="22dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_marginTop="15dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• 5 Tbsp. hummus\n• 1 cup sliced cucumber\n• 2 medium carrots"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:textStyle=""
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_marginTop="15dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dinner (584 calories)"
+                    android:textSize="22dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_marginTop="15dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Salmon and Vegetables\n• 4 oz. baked salmon\n• 1 cup roasted Brussels sprouts\n• 1 cup brown rice\n• 1/8 tsp. salt\n• 1/8 tsp. pepper\n• 1 1/2 Tbsp. walnuts"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_marginTop="15dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vinaigrette"
+                    android:textSize="22dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_marginTop="15dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• Combine 1 1/2 tsp. each olive oil, lemon juice and maple syrup; season with 1/8 tsp. salt.\n\nToss Brussels sprouts with 1/2 tsp. olive oil and bake at 425°F until lightly browned, 15 to 20 minutes. Coat salmon with 1/4 tsp. olive oil or a thin layer of cooking spray (1-second spray) and season with 1/8 tsp. each salt and pepper. Bake at 425°F until opaque in the middle, 4 to 6 minutes. Serve Brussels sprouts, salmon and brown rice drizzled with the vinaigrette and topped with walnuts."
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:textStyle=""
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_marginTop="15dp"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</FrameLayout>

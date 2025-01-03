@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Workout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gym_home_bg_black"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp">
+        <!--    header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:background="#000000"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/backBtnId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".3"
+                android:textSize="30dp"
+                android:background="@drawable/baseline_arrow_back"
+                android:layout_marginLeft="8dp"
+                android:onClick="backFunction"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Workout"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="25dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="15dp"
+                android:layout_height="35dp"
+                android:layout_weight=".2"
+                android:background="@drawable/menu"
+                android:textColor="@color/white"
+                android:textSize="30dp"/>
+
+        </LinearLayout>
+        <!--    header -->
+
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="2"
+            android:rowCount="3"
+            android:padding="15dp"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/exerciseguideGYMBtnId"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="0"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="4dp"
+                android:layout_margin="3dp"
+                android:onClick="wogymFunction">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="185dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/gym"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="GYM"
+                        android:textSize="25dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:paddingTop="13dp"
+                        android:paddingBottom="13dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/exerciseguideBodyWeightBtnId"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="0"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="4dp"
+                android:layout_margin="3dp"
+                android:onClick="woHomeEquipFunction">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="185dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/bodyweight"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Home-No Equipment"
+                        android:textSize="22dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:paddingBottom="5dp"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/exerciseguideSuspensionBtnId"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="0"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="4dp"
+                android:layout_marginTop="20dp"
+                android:layout_margin="3dp"
+                android:onClick="suspensionFunction">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/suspension"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Suspension Training"
+                        android:textSize="22dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:paddingBottom="5dp"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/exerciseguideBoxBtnId"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="0"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="4dp"
+                android:layout_marginTop="20dp"
+                android:layout_margin="3dp"
+                android:onClick="functionalTrainingFunction">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="185dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/box"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Functional Training"
+                        android:textSize="22dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:paddingBottom="5dp"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/exerciseguideBattleRopeBtnId"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="0"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="4dp"
+                android:layout_marginTop="20dp"
+                android:layout_margin="3dp"
+                android:onClick="calisthenicsFunction">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="185dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/bettlerope"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Calisthenics"
+                        android:textSize="22dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:paddingTop="13dp"
+                        android:paddingBottom="13dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+    </LinearLayout>
+
+</LinearLayout>

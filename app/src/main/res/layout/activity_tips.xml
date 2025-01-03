@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tips">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F80C0C0C"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp">
+        <!--    header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:background="#000000"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/backBtnId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".4"
+                android:textSize="30dp"
+                android:background="@drawable/baseline_arrow_back"
+                android:layout_marginLeft="8dp"
+                android:onClick="backFunction"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.8"
+                android:text="Tips"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="25dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="15dp"
+                android:layout_height="35dp"
+                android:layout_weight=".2"
+                android:textColor="@color/white"
+                android:textSize="30dp"/>
+        </LinearLayout>
+        <!--    header -->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:background="#171717">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="Planning and Goal Setting: "
+                        android:textColor="#03A9F4"
+                        android:textStyle="italic"
+                        android:textSize="22dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="1. Set Clear Goals: Determine what you want to achieve—whether it's losing weight, building muscle, improving endurance, or general fitness. Having specific, measurable goals helps you stay motivated and track progress.
+\n\n2. Create a Plan: Develop a workout routine that aligns with your goals. Include a mix of cardio, strength training, and flexibility exercises."
+                        android:textColorHint="#7A7A7A"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="italic"
+                        android:textSize="15dp"
+                        android:paddingBottom="10dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:background="#171717">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="Workout Structure: "
+                        android:textColor="#03A9F4"
+                        android:textStyle="italic"
+                        android:textSize="22dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="1. Warm-Up: Always start with a 5-10 minute warm-up to increase your heart rate and prepare your muscles for exercise. Dynamic stretches or light cardio are good options.
+\n\n2. Compound Exercises: Focus on compound movements like squats, deadlifts, bench presses, and rows. These exercises work multiple muscle groups simultaneously and are efficient for building strength and muscle.
+\n\n3. Progressive Overload: Gradually increase the weight, reps, or intensity of your workouts to continually challenge your muscles and promote growth.
+\n\n3. Form and Technique: Prioritize proper form to avoid injuries and ensure you're effectively targeting the muscles you intend to work. Consider working with a trainer initially to learn correct techniques."
+                        android:textColorHint="#7A7A7A"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="italic"
+                        android:textSize="15dp"
+                        android:paddingBottom="10dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:background="#171717">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="Recovery and Nutrition: "
+                        android:textColor="#03A9F4"
+                        android:textStyle="italic"
+                        android:textSize="22dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="1. Cool Down: After your workout, spend 5-10 minutes cooling down with light cardio and stretching. This helps reduce muscle stiffness and promotes recovery.
+\n\n2. Rest and Recovery: Give your muscles time to recover. Aim for 48 hours of rest between working the same muscle group. Incorporate rest days into your routine.
+\n\n3. Nutrition: Fuel your body with a balanced diet rich in protein, healthy fats, and complex carbohydrates. Consider having a protein-rich snack or meal post-workout to aid muscle repair.
+\n\n4. Hydration: Stay hydrated by drinking plenty of water before, during, and after your workouts."
+                        android:textColorHint="#7A7A7A"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="italic"
+                        android:textSize="15dp"
+                        android:paddingBottom="10dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:background="#171717">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="Mindset and Consistency: "
+                        android:textColor="#03A9F4"
+                        android:textStyle="italic"
+                        android:textSize="22dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="1. Stay Consistent: Consistency is key to seeing results. Stick to your routine, even on days when motivation is low.
+\n\n2. Track Progress: Keep a workout journal or use a fitness app to log your workouts, track progress, and stay motivated.
+\n\n3. Listen to Your Body: Pay attention to your body’s signals. If you experience pain (not to be confused with the normal discomfort of working out), take a break and consult a professional if necessary.
+\n\n4. Variety: Mix up your routine to prevent boredom and plateaus. Try new exercises, classes, or workout styles to keep things interesting and challenging."
+                        android:textColorHint="#7A7A7A"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="italic"
+                        android:textSize="15dp"
+                        android:paddingBottom="10dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:background="#171717">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="Community and Support: "
+                        android:textColor="#03A9F4"
+                        android:textStyle="italic"
+                        android:textSize="22dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="1. Find a Workout Buddy: Partnering with a friend can make workouts more enjoyable and keep you accountable.
+\n\n2. Join Classes: Group fitness classes can provide structure, motivation, and a sense of community."
+                        android:textColorHint="#7A7A7A"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="italic"
+                        android:textSize="15dp"
+                        android:paddingBottom="10dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:background="#171717">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="Equipment and Environment: "
+                        android:textColor="#03A9F4"
+                        android:textStyle="italic"
+                        android:textSize="22dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="1. Proper Attire: Wear comfortable, breathable clothing and appropriate footwear to ensure safety and comfort.
+\n\n2. Use Equipment Wisely: Learn how to use gym equipment correctly. Don’t hesitate to ask for help or a demonstration from gym staff."
+                        android:textColorHint="#7A7A7A"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="italic"
+                        android:textSize="15dp"
+                        android:paddingBottom="10dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:background="#171717">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="Mental Health: "
+                        android:textColor="#03A9F4"
+                        android:textStyle="italic"
+                        android:textSize="22dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="1. Set Realistic Expectations: Understand that progress takes time. Avoid comparing yourself to others and focus on your own journey.
+\n\n2. Enjoy the Process: Find joy in your workouts and celebrate small victories along the way."
+                        android:textColorHint="#7A7A7A"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="italic"
+                        android:textSize="15dp"
+                        android:paddingBottom="10dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>
